@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { KomodoService } from 'src/services/komodo.service';
+import {HttpClient} from '@angular/common/http';
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private komodoService:KomodoService,private http:HttpClient) { }
   ngOnInit() {
+    this.komodoService.getWalletInfo().subscribe(wallet=>{
+      console.log(JSON.stringify(wallet));
+    });
   }
 
 }

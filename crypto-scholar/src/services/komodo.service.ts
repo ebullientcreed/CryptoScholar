@@ -47,7 +47,7 @@ export class KomodoService {
 
   }
   getWalletInfo(){
-    const APIUrl="/walletinfo";
+    const APIUrl="/getwalletinfo";
     var options = httpOptions;
     return this.http.get<any>(APIUrl,options).pipe(
       tap(_ => this.log('got transaction')),
@@ -55,7 +55,7 @@ export class KomodoService {
     )
   }
   getNetworkInfo(){
-    const APIUrl="/networkinfo";
+    const APIUrl="/getnetworkinfo";
     var options = httpOptions;
     return this.http.get<any>(APIUrl,options).pipe(
       tap(_ => this.log('got transaction')),

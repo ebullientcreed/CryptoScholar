@@ -9,6 +9,8 @@ import { UserPageComponent } from './user-page/user-page.component';
 import { HeaderComponent } from './header/header.component';
 import { WalletComponent } from './header/wallet/wallet.component';
 import { TransactionLogComponent } from './transaction-log/transaction-log.component';
+import { KomodoService } from 'src/services/komodo.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,10 @@ import { TransactionLogComponent } from './transaction-log/transaction-log.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [KomodoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
