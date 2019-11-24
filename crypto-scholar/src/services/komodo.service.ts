@@ -14,7 +14,7 @@ export class KomodoService {
   constructor(private infoService:InfoService,private http:HttpClient) { }
 
   getTransaction(txid) : Observable<any>{
-    const APIUrl="/tx/{txid}";
+    const APIUrl="http://localhost:4200/tx/{txid}";
     const myurl=APIUrl.replace(/{txid}/g,txid);
     var options = httpOptions;
     return this.http.get<any>(myurl,options).pipe(
@@ -23,7 +23,7 @@ export class KomodoService {
     )
   }
   postAmount(amount) : Observable<any>{
-    const APIUrl="/amount/{amount}";
+    const APIUrl="http://localhost:4200/amount/{amount}";
     const myurl=APIUrl.replace(/{amount}/g,amount);
     var options = httpOptions;
     return this.http.get<any>(myurl,options).pipe(
@@ -32,7 +32,7 @@ export class KomodoService {
     )
   }
   getReceivedByAddress(amount,address):Observable<any>{
-    const APIUrl="/amount/received";
+    const APIUrl="http://localhost:4200/amount/received";
     var options = httpOptions;
     options['params'] = new HttpParams()
       .set('address',address)
@@ -47,7 +47,7 @@ export class KomodoService {
 
   }
   getWalletInfo(){
-    const APIUrl="/getwalletinfo";
+    const APIUrl="http://localhost:8080/getwalletinfo";
     var options = httpOptions;
     return this.http.get<any>(APIUrl,options).pipe(
       tap(_ => this.log('got transaction')),
