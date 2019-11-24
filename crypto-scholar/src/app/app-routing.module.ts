@@ -12,6 +12,9 @@ const routes: Routes = [
     redirectTo: '',
     path: '',
     pathMatch:'full'
+  },
+  {
+    
   }
 ];
 
