@@ -1,0 +1,26 @@
+
+.black-header{
+    max-width:1024px;
+    height:57px;
+    background-color:black;
+    display:flex;
+    margin:auto;
+}
+.pig{
+    cursor:pointer;
+    margin-top:2px;
+    margin-left:9px;
+}
+.future{
+    margin-top:17px;
+    margin-left:36px;
+    font-family: Helvetica;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: left;
+}
+.doodle{
+    cursor:pointer;
+    margin-left: 567px;
+    margin-top: 1px;
+}

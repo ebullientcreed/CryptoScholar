@@ -1,0 +1,75 @@
+.first-writing{
+    font-family: Helvetica-Bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-top:29px;
+    margin-left:10px;
+}
+.content{
+    max-width:1024px;
+    margin:auto;
+}
+.margin-arrow{
+    margin-left: 853px;
+    margin-top: -20px;
+    position: absolute;
+}
+.font-margin{
+    margin-left:20px;
+    margin-top:15px;
+}
+.font-box{
+    font-family: Helvetica-Bold;
+    font-size: 24px;
+    color: #302E4B;
+    text-align: left;
+}
+.opened-box{
+    width:944px;
+    height:99px;
+    background: #D8D8D8;
+    border: 1px solid #979797;
+    display:flex;
+}
+.unopened-box{
+    width:944px;
+    height:68px;
+    background: #D8D8D8;
+    border: 1px solid #979797;
+    display:flex;
+}
+.total-box{
+    width:944px;
+    height:68px;
+    background: #302E4B;
+    border: 1px solid #979797;
+    display:flex;
+}
+.margin-box{
+   margin-top:30px; 
+}
+.current-balance{
+    margin-left:20px;
+    margin-top:20px;
+    font-family: Helvetica-Bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: left;
+}
+.number-transactions{
+    margin-top:20px;
+    margin-left:325px;
+    font-family: Helvetica-Bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: left;
+}
+.transaction-text{
+    margin-top:20px;
+    margin-left:20px;
+    font-family: Helvetica-Bold;
+    font-size: 18px;
+    color: #302E4B;
+    text-align: left;
+}

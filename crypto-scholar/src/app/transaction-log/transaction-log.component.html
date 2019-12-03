@@ -1,1 +1,23 @@
-<p>transaction-log works!</p>
+<app-header></app-header>
+<div class="content">
+    <div class="first-writing">Your scholarship request has been accepted, this is your wallet</div> 
+    <ng-container *ngFor="let t of txs;let i=index;" class="unopened-box">
+        <div class="unopened-box">
+            <div (click)="setRow(i)" class="font-margin font-box">{{t.name}}
+                <img (click)="setRow(i)"class="margin-arrow" [src]="selectedIndex===i?'../../assets/img/down-arrow.svg':'../../assets/img/up-arrow.svg'">
+            </div>
+        </div>
+        <div *ngIf="selectedIndex===i" class="opened-box">
+           <p class="transaction-text">
+               Amount: {{t.amount}} KMD <br>
+               Date: {{t.date| date :'medium'}}<br>
+               Number of Times: {{t.redemptions}} <br>
+           </p>
+        </div>
+        
+    </ng-container>
+    <div class="total-box">
+        <div class="current-balance">Current Balance:3000</div>
+        <div class="number-transactions">Number of Transactions: 5</div>
+    </div>
+</div>

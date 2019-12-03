@@ -1,1 +1,78 @@
-<p>browse-offers works!</p>
+<app-header></app-header>
+<div class="content">
+    <div class="flex-all" >
+        <div class="margin-header"> 
+            <div class="header">
+                <div class="margin-h-writing">
+                    <div class="writing">
+                        Choose a scholarship and see if you apply
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="flex-mid">
+            <div class="information-margin">
+                <div class="information">
+                    <ng-container *ngIf="selectedIndex===currId">
+                        <div class="flex-side">
+                            <h1 class="listing-top">{{scholarship[currId].name}}</h1>
+                            <hr>
+                            <h1 class="listing-mid">Details</h1>
+                            <p class="info-scholar">Amount: {{scholarship[currId].value}} KMD<br>
+                               Education: {{scholarship[currId].type}} <br>
+                               Available Rewards: {{scholarship[currId].available}}<br>
+                               
+                            </p>
+                            
+                            <hr>
+                            <h1 class="listing-mid">Award Requirements</h1>
+                            <p class="info-scholar">Age: {{scholarship[currId].age}}<br>
+                                Education: {{scholarship[currId].educ}} <br>
+                                Citizenship: {{scholarship[currId].citi}}<br>
+                                High School GPA: {{scholarship[currId].gpa}}<br>
+                                SAT: {{scholarship[currId].sat}}<br>
+                                FAFSA: {{scholarship[currId].fafsa}}<br>
+                                Degree: {{scholarship[currId].degree}}<br>
+                                Other: {{scholarship[currId].other}}<br>
+                             </p>
+                             
+                             <hr>
+                             <h1 class="listing-mid">Redemption Status</h1>
+                            <p class="info-scholar">Average Redemptions Per Year: {{scholarship[currId].avgRed}}<br>
+                               Start Date: {{scholarship[currId].startDate}} <br>
+                               Eligibility: {{scholarship[currId].eligibility}}
+                            </p>
+                            <div class="button-margin">
+                                <button routerLink="/transactions" (click)="addScholarship()" class="button" type="button">
+                                        Apply
+                                </button>
+                            </div>
+                            <!--<div routerLink="/transactions"type="button" class="button">Apply</div>-->
+
+                            
+                            
+                            
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+            <div class="information-margin">
+                <div class="side-information flex-side">
+                      <ng-container *ngFor="let scholar of scholarship; let i=index;" >
+                        <div  (click)="setRow(i)" class="listing-margin"[ngClass]="selectedIndex==i ? 'highlight':'listing'">
+                            <div class="listing-title">{{scholar.name}}</div>
+                            <div class="listing-under">Value: {{scholar.value}} KMD</div>
+                            <div class="listing-under">Type: {{scholar.type}}</div>
+                        </div>
+                      </ng-container>
+
+                    
+                  
+                </div>
+            </div>
+
+    </div>
+</div>

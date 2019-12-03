@@ -1,0 +1,138 @@
+.content{
+    max-width:1024px;
+    margin:auto;
+}
+.margin-header{
+    margin-top:20px;
+}
+.header{
+    background: #D8D8D8;
+    border: 1px solid #979797;
+    width:991px;
+    height:100px;
+    margin:auto;
+    display:flex;
+
+ 
+}
+.information-margin{
+    margin-top:15px;
+}
+.information{
+    width:620px;
+    height:727px;
+    margin-left:15px;
+    background: #D8D8D8;
+    
+}
+.side-information{
+    overflow-y:auto;
+    background: #2D2A42;
+    width:367px;
+    height:727px;
+
+}
+.listing-margin{
+    margin-top:8px;
+    margin-bottom:8px;
+    margin-right:20px;
+    margin-left:20px;
+}
+.listing-title{
+    font-family: Helvetica-Bold;
+    margin-top:15px;
+    margin-left:3px;
+    font-size: 24px;
+    color: #302E4B;
+    text-align: left;
+}
+.listing-top{
+    font-family: Helvetica-Bold;
+    margin-top:24px;
+    margin-left:5px;
+    font-size: 24px;
+    color: #302E4B;
+    text-align: left;
+}
+
+.listing-mid{
+    font-family: Helvetica-Bold;
+    margin-top:10px;
+    margin-left:3px;
+    font-size: 24px;
+    color: #302E4B;
+    text-align: left;
+}
+.listing-under{
+
+    font-family: Helvetica-Bold;
+    margin-top:10px;
+    margin-left:5px;
+    font-size: 16px;
+    color: #3E3E43;
+    text-align: left;
+
+}
+
+.highlight{
+    background: #768DE0;
+    border: 1px solid #979797;
+    min-width:326px;
+    min-height:126px;
+    cursor:pointer;
+}
+.listing{
+    background:#D8D8D8;
+    border: 1px solid #979797;
+    min-width:326px;
+    min-height:126px;
+    cursor:pointer;
+}
+.flex-all{
+    display:flex;
+    justify-content:center;
+}
+.flex-side{
+    flex-direction:column;
+    display:flex;
+}
+.flex-mid{
+    display:flex;
+    justify-content: flex-start
+    
+}
+.writing{
+    font-family: Helvetica;
+    font-size: 36px;
+    color: #2D2A42;
+    text-align: left;
+}
+.margin-h-writing{
+    margin-left:20px;
+    margin-top:37px;
+}
+.button {
+    background-color: #768DE0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;    
+
+}
+.button-margin{
+    margin-left:500px;
+    margin-top:-15px;
+}
+.info-scholar{
+    font-family: Helvetica-Bold;
+    font-size: 18px;
+    color: #3E3E43;
+    text-align: left;
+    margin-left:6px;
+    margin-top:0px;
+}

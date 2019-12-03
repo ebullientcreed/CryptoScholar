@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="23px" viewBox="0 0 32 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Triangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="View-Transaction" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-909.000000, -183.000000)">
+            <rect id="Rectangle" stroke="#060606" fill="#000000" x="0.5" y="52.5" width="1023" height="971"></rect>
+            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" transform="translate(495.000000, 250.000000) scale(1, -1) translate(-495.000000, -250.000000) " x="23.5" y="169.5" width="943" height="161"></rect>
+            <path d="M925,183.875558 L909.95691,205.5 L940.04309,205.5 L925,183.875558 Z" id="Triangle" stroke="#979797" fill="#302E4B" transform="translate(925.000000, 194.500000) scale(-1, -1) translate(-925.000000, -194.500000) "></path>
+        </g>
+    </g>
+</svg>
