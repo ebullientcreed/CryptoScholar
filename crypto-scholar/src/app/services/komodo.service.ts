@@ -12,7 +12,7 @@ const httpOptions={
 })
 export class KomodoService {
   constructor(private infoService:InfoService,private http:HttpClient) { }
-
+///these connect with a localhost connected to the blockchain
   getTransaction(txid) : Observable<any>{
     const APIUrl="/tx/{txid}";
     const myurl=APIUrl.replace(/{txid}/g,txid);
@@ -48,6 +48,7 @@ export class KomodoService {
   }
   getWalletInfo(){
     const APIUrl="/getwalletinfo";
+    console.log(APIUrl);
     var options = httpOptions;
     return this.http.get<any>(APIUrl,options).pipe(
       tap(_ => this.log('got transaction')),

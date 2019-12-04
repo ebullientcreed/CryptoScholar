@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SharedDataService } from '../services/shared-data.service';
 import { Scholarship } from '../data/Scholarship';
 import { Transaction } from '../data/Transaction';
+import { KomodoService } from '../services/komodo.service';
 
 @Component({
   selector: 'app-transaction-log',
@@ -9,7 +10,7 @@ import { Transaction } from '../data/Transaction';
   styleUrls: ['./transaction-log.component.css']
 })
 export class TransactionLogComponent implements OnInit {
-  constructor(private sharedDataService: SharedDataService) { }
+  constructor(private sharedDataService: SharedDataService,private komodoService:KomodoService) { }
   txs:Transaction[]=this.sharedDataService.currTransactions;
   selectedIndex:number=-1;
   currId:number=null;
