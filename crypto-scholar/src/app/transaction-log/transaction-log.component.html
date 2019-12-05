@@ -11,13 +11,17 @@
            <p class="transaction-text">
                Amount: {{t.amount}} KMD <br>
                Date: {{t.date| date :'medium'}}<br>
-               Number of Times: {{t.redemptions}} <br>
+               Number of Years: {{t.redemptions}} <br>
            </p>
         </div>
         
     </ng-container>
     <div class="total-box">
-        <div class="current-balance">Current Balance:3000</div>
-        <div class="number-transactions">Number of Transactions: 5</div>
+        <div class="current-balance">Current Balance:{{currentBalance}}</div>
+        <div class="scholar-num">Number of Transactions: {{currentHeight}}</div>
+    </div>
+    <div class="total-box">
+        <div class="current-balance">KMD Available:{{walletBalance}}</div>
+        <div class="number-transactions">Scholarships To Date: {{walletHeight}}</div>
     </div>
 </div>

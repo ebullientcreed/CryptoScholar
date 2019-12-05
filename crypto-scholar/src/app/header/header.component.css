@@ -6,6 +6,9 @@
     display:flex;
     margin:auto;
 }
+.color{
+    color:#108897!important;
+}
 .pig{
     cursor:pointer;
     margin-top:2px;
@@ -20,12 +23,21 @@
     text-align: left;
     
 }
-.doodle{
-    cursor:pointer;
-    margin-left: 567px;
-    margin-top: 1px;
-}
 .wallet{
     cursor:pointer;
-    
+    margin-left: 30px;
+    margin-top: 1px;
+}
+
+.doodle{
+    cursor:pointer;
+    margin-left: 254px;
+    margin-top: 1px;
+}
+.text{
+    margin-top:16px;
+
+    color: #0f62fe;
+    font-family: Helvetica;
+    font-size: 18px;
 }

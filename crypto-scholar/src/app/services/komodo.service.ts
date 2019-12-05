@@ -44,12 +44,12 @@ export class KomodoService {
     
   }*/
   sendToAddress(amount){
-    const APIUrl="/api/sendtoaddress/{amount}/";
+    const APIUrl="/api/sendtoaddress/{amount}";
     const myurl=APIUrl.replace(/{amount}/g,amount);
     var options = httpOptions;
     options['params'] = new HttpParams()
       .set('amount',amount);
-      return this.http.get<any>(APIUrl,options).pipe(
+      return this.http.get<any>(myurl,options).pipe(
         tap(_ => this.log('got transaction')),
         catchError(this.handleError<any>('got amount'))
       )

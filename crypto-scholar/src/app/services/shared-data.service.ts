@@ -9,6 +9,8 @@ export class SharedDataService {
   currTransactions:Transaction[]= [];
   private messageSource = new BehaviorSubject('first message');
   currentMessage = this.messageSource.asObservable();
+  txTotal:number= 0;
+  numberTxs:number=0;
   constructor() { }
   
 }

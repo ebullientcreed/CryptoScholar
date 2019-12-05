@@ -17,11 +17,11 @@
     margin-top:30px;
 }
 .writing{
-    font-family: Helvetica;
-    font-size: 18px;
-    color: #0f62fe;
+    font-family: Helvetica-Bold;
+    font-size: 36px;
+    color: #108897;
     text-align: left;
-    margin:auto;
+    margin-top: -11px;
     
 }
 .margin-writing{
@@ -76,7 +76,7 @@
     height: 425px;
 }
 .button {
-    background-color: #0f62fe;
+    background-color:#108897;
     border: none;
     color: white;
     padding: 15px 32px;

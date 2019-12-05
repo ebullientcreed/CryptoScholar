@@ -43,7 +43,7 @@
     margin-top:15px;
     margin-left:3px;
     font-size: 24px;
-    color: #302E4B;
+    color: #108897;
     text-align: left;
 }
 .listing-top{
@@ -51,7 +51,7 @@
     margin-top:24px;
     margin-left:5px;
     font-size: 24px;
-    color: #302E4B;
+    color: #108897!important;
     text-align: left;
 }
 
@@ -60,7 +60,7 @@
     margin-top:10px;
     margin-left:3px;
     font-size: 24px;
-    color: #302E4B;
+    color:#108897!important;
     text-align: left;
 }
 .listing-under{
@@ -69,13 +69,13 @@
     margin-top:10px;
     margin-left:5px;
     font-size: 16px;
-    color: #3E3E43;
+    color:#1088C0!important;
     text-align: left;
 
 }
 
 .highlight{
-    background: #768DE0;
+    background: #353535;
     border: 1px solid #979797;
     min-width:326px;
     min-height:126px;
@@ -102,9 +102,9 @@
     
 }
 .writing{
-    font-family: Helvetica;
-    font-size: 36px;
-    color: #2D2A42;
+    font-family: Helvetica-Bold;
+    font-size: 33px;
+    color:#108897!important;
     text-align: left;
 }
 .margin-h-writing{
@@ -112,7 +112,7 @@
     margin-top:37px;
 }
 .button {
-    background-color: #768DE0;
+    background-color: #353535;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -131,7 +131,7 @@
 .info-scholar{
     font-family: Helvetica-Bold;
     font-size: 18px;
-    color: #3E3E43;
+    color: #1088C0!important;
     text-align: left;
     margin-left:6px;
     margin-top:0px;

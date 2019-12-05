@@ -20,8 +20,11 @@ export class BrowseOffersComponent implements OnInit {
     this.setItems();
   }
   sendTx(){
+    this.sharedDataService.txTotal+=this.currTx.amount;
+    this.sharedDataService.numberTxs+=1;
     this.komodoService.sendToAddress(this.currTx.amount).subscribe(wallet=>{
       console.log(JSON.stringify(wallet));
+
     });
   }
   setRow(_index: number) {

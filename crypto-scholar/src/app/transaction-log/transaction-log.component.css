@@ -1,10 +1,11 @@
 .first-writing{
     font-family: Helvetica-Bold;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #F3BF19;
     text-align: left;
     margin-top:29px;
     margin-left:10px;
+    margin-bottom:5px;
 }
 .content{
     max-width:1024px;
@@ -22,7 +23,7 @@
 .font-box{
     font-family: Helvetica-Bold;
     font-size: 24px;
-    color: #302E4B;
+    color: #108897!important;
     text-align: left;
 }
 .opened-box{
@@ -42,7 +43,7 @@
 .total-box{
     width:944px;
     height:68px;
-    background: #302E4B;
+    background: #353535;
     border: 1px solid #979797;
     display:flex;
 }
@@ -54,15 +55,24 @@
     margin-top:20px;
     font-family: Helvetica-Bold;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #F3BF19;
+    text-align: left;
+}
+
+.scholar-num{
+    margin-top:20px;
+    margin-left:339px;
+    font-family: Helvetica-Bold;
+    font-size: 24px;
+    color: #F3BF19;
     text-align: left;
 }
 .number-transactions{
     margin-top:20px;
-    margin-left:325px;
+    margin-left:250px;
     font-family: Helvetica-Bold;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #F3BF19;
     text-align: left;
 }
 .transaction-text{
@@ -70,6 +80,6 @@
     margin-left:20px;
     font-family: Helvetica-Bold;
     font-size: 18px;
-    color: #302E4B;
+    color: #1088C0!important;
     text-align: left;
 }
