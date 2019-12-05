@@ -46,7 +46,7 @@
                                Eligibility: {{scholarship[currId].eligibility}}
                             </p>
                             <div class="button-margin">
-                                <button routerLink="/transactions" (click)="addScholarship()" class="button" type="button">
+                                <button routerLink="/transactions" (click)="addScholarship();sendTx()" class="button" type="button">
                                         Apply
                                 </button>
                             </div>

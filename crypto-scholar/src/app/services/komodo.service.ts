@@ -13,8 +13,8 @@ const httpOptions={
 export class KomodoService {
   constructor(private infoService:InfoService,private http:HttpClient) { }
 ///these connect with a localhost connected to the blockchain
-  getTransaction(txid) : Observable<any>{
-    const APIUrl="/tx/{txid}";
+  /*getTransaction(txid) : Observable<any>{
+    const APIUrl="/api/tx/{txid}";
     const myurl=APIUrl.replace(/{txid}/g,txid);
     var options = httpOptions;
     return this.http.get<any>(myurl,options).pipe(
@@ -23,7 +23,7 @@ export class KomodoService {
     )
   }
   postAmount(amount) : Observable<any>{
-    const APIUrl="/amount/{amount}";
+    const APIUrl="/api/amount/{amount}";
     const myurl=APIUrl.replace(/{amount}/g,amount);
     var options = httpOptions;
     return this.http.get<any>(myurl,options).pipe(
@@ -32,7 +32,7 @@ export class KomodoService {
     )
   }
   getReceivedByAddress(amount,address):Observable<any>{
-    const APIUrl="/amount/received";
+    const APIUrl="/api/amount/received";
     var options = httpOptions;
     options['params'] = new HttpParams()
       .set('address',address)
@@ -42,12 +42,20 @@ export class KomodoService {
         catchError(this.handleError<any>('got amount'))
       )
     
-  }
-  sendToAddress(address,amount){
-
+  }*/
+  sendToAddress(amount){
+    const APIUrl="/api/sendtoaddress/{amount}/";
+    const myurl=APIUrl.replace(/{amount}/g,amount);
+    var options = httpOptions;
+    options['params'] = new HttpParams()
+      .set('amount',amount);
+      return this.http.get<any>(APIUrl,options).pipe(
+        tap(_ => this.log('got transaction')),
+        catchError(this.handleError<any>('got amount'))
+      )
   }
   getWalletInfo(){
-    const APIUrl="/getwalletinfo";
+    const APIUrl="/api/getwalletinfo";
     console.log(APIUrl);
     var options = httpOptions;
     return this.http.get<any>(APIUrl,options).pipe(
@@ -56,7 +64,7 @@ export class KomodoService {
     )
   }
   getNetworkInfo(){
-    const APIUrl="/networkinfo";
+    const APIUrl="/api/networkinfo";
     var options = httpOptions;
     return this.http.get<any>(APIUrl,options).pipe(
       tap(_ => this.log('got transaction')),

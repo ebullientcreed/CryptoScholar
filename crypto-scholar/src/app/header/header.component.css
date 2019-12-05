@@ -18,9 +18,14 @@
     font-size: 18px;
     color: #FFFFFF;
     text-align: left;
+    
 }
 .doodle{
     cursor:pointer;
     margin-left: 567px;
     margin-top: 1px;
+}
+.wallet{
+    cursor:pointer;
+    
 }

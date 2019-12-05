@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import{Scholarship} from '../data/Scholarship';
 import { Transaction } from '../data/Transaction';
 import { SharedDataService } from '../services/shared-data.service';
+import { KomodoService } from '../services/komodo.service';
 @Component({
   selector: 'app-browse-offers',
   templateUrl: './browse-offers.component.html',
@@ -13,10 +14,15 @@ export class BrowseOffersComponent implements OnInit {
   currId:number=null;
   currVal:number;
   currTx:Transaction= new Transaction();
-  constructor(private sharedDataService:SharedDataService) { }
+  constructor(private sharedDataService:SharedDataService, private komodoService:KomodoService) { }
 
   ngOnInit() {
     this.setItems();
+  }
+  sendTx(){
+    this.komodoService.sendToAddress(this.currTx.amount).subscribe(wallet=>{
+      console.log(JSON.stringify(wallet));
+    });
   }
   setRow(_index: number) {
     this.selectedIndex = _index;
@@ -47,8 +53,12 @@ export class BrowseOffersComponent implements OnInit {
     this.scholarship=[scholarship1,scholarship2,scholarship3,scholarship4,scholarship5,scholarship6];
 
     //scholarship1.name="Satoshi Scholar";
-    /*scholarship1.value="";
-    scholarship1.type;
+    scholarship1.value=1600;
+    scholarship2.value=2100;
+    scholarship3.value=3000;
+    scholarship4.value=2500;
+    scholarship5.value=2700;
+    /*scholarship1.type;
     scholarship1.available;
     scholarship1.age;
     scholarship1.educ;
@@ -61,9 +71,8 @@ export class BrowseOffersComponent implements OnInit {
     scholarship1.avgRed;
     scholarship1.startDate;
     scholarship1.eligibility;
-    scholarship2.name;
-    scholarship2.value;
-    scholarship2.type;
+    scholarship2.name;*/
+    /*scholarship2.type;
     scholarship2.available;
     scholarship2.age;
     scholarship2.educ;
@@ -77,7 +86,7 @@ export class BrowseOffersComponent implements OnInit {
     scholarship2.startDate;
     scholarship2.eligibility;
     scholarship3.name;
-    scholarship3.value;
+    scholarship3.value=2200;
     scholarship3.type;
     scholarship3.available;
     scholarship3.age;
@@ -121,7 +130,6 @@ export class BrowseOffersComponent implements OnInit {
     scholarship5.avgRed;
     scholarship5.startDate;
     scholarship5.eligibility;
-    name;
     scholarship6.value;
     scholarship6.type;
     scholarship6.available;

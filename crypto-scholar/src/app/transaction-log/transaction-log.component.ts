@@ -15,7 +15,14 @@ export class TransactionLogComponent implements OnInit {
   selectedIndex:number=-1;
   currId:number=null;
   currVal:number;
+  
   ngOnInit() {
+    this.komodoService.getWalletInfo().subscribe(wallet=>{
+      console.log(JSON.stringify(wallet));
+    });
+  }
+  setCurrBalance(){
+
   }
   setRow(_index: number) {
     this.selectedIndex = _index;
