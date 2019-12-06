@@ -1,0 +1,4 @@
+com\blockchain\komodoConnect\KomodoConnectApplication.class
+com\blockchain\komodoConnect\service\KomodoService.class
+com\blockchain\komodoConnect\service\KomodoServiceImpl.class
+com\blockchain\komodoConnect\Controllers\KomodoAPIController.class
