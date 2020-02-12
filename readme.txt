@@ -1,4 +1,4 @@
-Name - Christopher Barnwell(1001627559), Navaneeth Thekkumpat(1001656413)
+Name - Christopher Barnwell, Navaneeth Thekkumpat
 
 Tools used: Angular 8, Sketch, Spring Boot, Komodo Platform
 
