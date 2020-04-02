@@ -1,5 +1,5 @@
 Name - Christopher Barnwell, Navaneeth Thekkumpat
-
+Project Description -  a quickly built and prototyped application concept for a cryptocurrency scholarship application.
 Tools used: Angular 8, Sketch, Spring Boot, Komodo Platform
 
 Files		   :	-Submited a ZIPPED directory called cryptoscholar.zip.
